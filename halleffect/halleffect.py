@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[19]:
 
 
 import numpy as np
@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-# In[8]:
+# In[20]:
 
 
 calib_df = pd.read_csv("calib.csv")
@@ -24,11 +24,10 @@ ax.set_ylabel("Magnetic Field (kG)")
 ax.grid()
 ax.set_title("Calibration : magnetic field vs coil current")
 plt.savefig("calib.jpeg", bbox_inches="tight", dpi=130)
-plt.show()
 plt.close()
 
 
-# In[18]:
+# In[21]:
 
 
 n05a, n205ma, p1a, p481ma = pd.read_csv("n0.5a.csv"), pd.read_csv("n2.05ma.csv"), pd.read_csv("p1a.csv"), pd.read_csv("p4.81ma.csv")
